@@ -7,6 +7,7 @@
 ---
 
 <a id="tc-1"></a>
+
 ### TC-1 — Adding a virtual gift card to the shopping list
 
 #### Test Goal
@@ -40,6 +41,7 @@ Verify that a virtual gift card can be added to the shopping list from the "FEAT
 ---
 
 <a id="tc-2"></a>
+
 ### TC-2 — Adding multiple products to the shopping list
 
 #### Test Goal
@@ -61,7 +63,6 @@ Verify that multiple products can be added to the shopping list from the "FEATUR
 ##### Preconditions
 
 - Open the https://demowebshop.tricentis.com/ website.
-- Click the "Add to cart" button of the "$25 Virtual Gift Card" product in the "FEATURED PRODUCTS" list.
 
 ##### Test Steps
 
@@ -76,6 +77,7 @@ Verify that multiple products can be added to the shopping list from the "FEATUR
 ---
 
 <a id="tc-3"></a>
+
 ### TC-3 — Adding a virtual gift card without filling the required fields
 
 #### Test Goal
@@ -97,6 +99,7 @@ Verify that a virtual gift card cannot be added to the shopping list if the requ
 ##### Preconditions
 
 - Open the https://demowebshop.tricentis.com/ website.
+- Click the "Add to cart" button of the "$25 Virtual Gift Card" product in the "FEATURED PRODUCTS" list.
 
 ##### Test Steps
 
