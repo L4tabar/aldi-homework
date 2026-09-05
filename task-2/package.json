@@ -1,0 +1,25 @@
+{
+  "name": "aldi-playwright",
+  "version": "1.0.0",
+  "description": "Test automation framework for ALDI homework",
+  "scripts": {
+    "test:ui": "npx playwright test --project=ui",
+    "format": "npx prettier --check --write .",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint --fix ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^24.0.12",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "jiti": "^2.6.0",
+    "prettier": "^3.7.4",
+    "typescript-eslint": "^8.56.0"
+  }
+}
