@@ -13,7 +13,7 @@ Test automation framework built with Playwright, TypeScript.
 ## Prerequisites
 
 | Requirement | Minimum version | Notes                |
-|-------------|-----------------|----------------------|
+| ----------- | --------------- | -------------------- |
 | Node.js     | 22              | `node --version`     |
 | npm         | 10              | bundled with Node 22 |
 
@@ -42,11 +42,11 @@ npx playwright install --with-deps
 
 Set the following environment variables in the `.env` file:
 
-| Variable                        | Description                |
-|---------------------------------|----------------------------|
-| `BASE_URL`                      | Application under test URL |
-| `USER_EMAIL`                    | Registered user email      |
-| `USER_PASSWORD`  Start page URL | Registered user password   |
+| Variable                       | Description                |
+| ------------------------------ | -------------------------- |
+| `BASE_URL`                     | Application under test URL |
+| `USER_EMAIL`                   | Registered user email      |
+| `USER_PASSWORD` Start page URL | Registered user password   |
 
 If you don't have a registered user, you can create one on the application under test.
 

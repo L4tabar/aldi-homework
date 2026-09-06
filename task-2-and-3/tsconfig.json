@@ -15,9 +15,10 @@
     "paths": {
       "@po/*": ["pages/*"],
       "@fixtures/*": ["fixtures/*"],
-      "@testData/*": ["tests/testData/*"]
+      "@testData/*": ["tests/testData/*"],
+      "@support/*": ["support/*"]
     }
   },
-  "include": ["tests/**/*", "pages/**/*", "fixtures/**/*", "tests/testData/**/*"],
+  "include": ["tests/**/*", "pages/**/*", "fixtures/**/*", "tests/testData/**/*", "support/**/*"],
   "exclude": ["node_modules"]
 }

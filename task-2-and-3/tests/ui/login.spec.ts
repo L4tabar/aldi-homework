@@ -6,7 +6,7 @@ test.describe(
   {
     tag: ['@login'],
     annotation: {
-      type: 'Test Case',
+      type: 'User Story(es)',
       description: '<Link to US or requirements could be added here>',
     },
   },

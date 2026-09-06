@@ -4,6 +4,7 @@
   "description": "Test automation framework for ALDI homework",
   "scripts": {
     "test:ui": "npx playwright test --project=ui",
+    "test:api": "npx playwright test --project=api",
     "format": "npx prettier --check --write .",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix ."

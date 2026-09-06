@@ -3,16 +3,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig(
-  [
-    globalIgnores([
-      '.husky',
-      '.idea',
-      'node_modules',
-      'junit',
-      'playwright-report',
-      'test-results',
-    ]),
-  ],
+  [globalIgnores(['.husky', '.idea', 'node_modules', 'junit', 'playwright-report', 'test-results'])],
   {
     extends: [eslint.configs.recommended],
     rules: {
