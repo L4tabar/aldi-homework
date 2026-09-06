@@ -12,6 +12,7 @@ export default defineConfig({
     ['html', { open: 'never' }],
     ['junit', { outputFile: 'junit/results.xml' }],
   ],
+  testDir: 'tests',
 
   projects: [
     {
@@ -25,6 +26,15 @@ export default defineConfig({
         trace: 'on-first-retry',
         screenshot: 'only-on-failure',
       },
+    },
+    {
+      name: 'api-setup',
+      testMatch: /setup\/api\.token\.setup\.ts/,
+    },
+    {
+      name: 'api',
+      testDir: 'tests/api',
+      dependencies: ['api-setup'],
     },
   ],
 });

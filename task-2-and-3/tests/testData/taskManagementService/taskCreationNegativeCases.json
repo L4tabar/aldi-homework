@@ -1,0 +1,26 @@
+[
+  {
+    "testTitle": "Should throw an error when creating a task with an empty title",
+    "tcId": "iDontWantToAddImaginaryTCNumbersSrySoIJustCopyPasteThis",
+    "tcLink": "TC link could go here",
+    "function": "createTask",
+    "payload": {
+      "title": "",
+      "description": "Test task with an empty title"
+    },
+    "expectedStatusCode": 400,
+    "expectedError": "Task title cannot be empty"
+  },
+  {
+    "testTitle": "Should throw an error when creating a task with an empty description",
+    "tcId": "iDontWantToAddImaginaryTCNumbersSrySoIJustCopyPasteThis",
+    "tcLink": "TC link could go here",
+    "function": "createTask",
+    "payload": {
+      "title": "Test task with an empty description",
+      "description": ""
+    },
+    "expectedStatusCode": 400,
+    "expectedError": "Task description cannot be empty"
+  }
+]

@@ -16,7 +16,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: task-2
+        working-directory: task-2-and-3
 
     steps:
       - name: Checkout repository
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 22.x
           cache: npm
-          cache-dependency-path: task-2/package-lock.json
+          cache-dependency-path: task-2-and-3/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -42,7 +42,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: task-2
+        working-directory: task-2-and-3
 
     steps:
       - name: Checkout repository
@@ -53,7 +53,7 @@ jobs:
         with:
           node-version: 22.x
           cache: npm
-          cache-dependency-path: task-2/package-lock.json
+          cache-dependency-path: task-2-and-3/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -73,7 +73,7 @@ jobs:
         uses: dorny/test-reporter@v1
         with:
           name: Playwright Tests
-          path: task-2/junit/results.xml
+          path: task-2-and-3/junit/results.xml
           reporter: java-junit
 
       - name: Upload Playwright HTML report
@@ -81,5 +81,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: playwright-html-report
-          path: task-2/playwright-report
+          path: task-2-and-3/playwright-report
           if-no-files-found: warn
